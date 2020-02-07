@@ -31,12 +31,11 @@
 .buttons{ /*estilo para los botones de navegacion*/
     padding: 10px 25px;
     font-family: Arial;
-    position: relative;
-    left: 10%;
-    float: bottom;
+    position: center;
+    float: left;
     margin: auto;
     margin-bottom: 10px;
-    margin-left: 40px;
+    margin-left: 80%;
     font-size: 18px;
     font-weight: 300;
     background: #343A41;
@@ -48,7 +47,6 @@ h2 { /*estilo para subtitulos*/
 	font-family: Arial;
 	font-size: 28px;
 	font-style: normal;
-	font-weight: bold;
 	color: #ebf1f5;
     text-align: left;
     margin-left: 60px;
@@ -59,7 +57,6 @@ h2 { /*estilo para subtitulos*/
     font-family: Core Sans-37;
     font-size: 32px;
     font-style: normal;
-    font-weight: bold;
     text-align: left;
     margin-left: 50px;
     margin-top: 30px;
@@ -80,4 +77,18 @@ h2 { /*estilo para subtitulos*/
   color: #ebf1f5;
 }
 
-
+/*estilos para enlaces*/
+a:link {
+	text-decoration: none;
+}
+a:link:hover {
+	color: white;
+}
+/*estilo para pie de página*/
+#footer{
+    margin-top: 10px;
+    background: #343A41;
+    color: white;
+    text-align: center;
+    padding: 0.2em;
+}

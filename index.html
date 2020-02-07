@@ -49,6 +49,11 @@
             * ls -al: mostrar todos los archivos (incluidos los ocultos) en forma de lista.</br>
             * cd +nombre de la carpeta: entrar a una carpeta dentro de la carpeta actual.</br>
             * cd .. : ir a la carpeta anterior.</br>
+            * cd /: ir a la raíz del sistema.<br>
+            * history: muestra el historial de comandos ingresados.<br>
+            * flecha hacia arriba: recorre los comandos anteriormente ingresados.<br>
+            * !# : repite el comando número # ingresado.<br>
+            * rm "nombre del archivo": elimina por completo el archivo (hay que tener cuidado con este comando). <br>
         </p>
     </br></br></br></br></br></br></br></br></br></br></br>
         <h2>git:</h2>
@@ -62,7 +67,19 @@
         <h2>git status:</h2>
         <p class="text">
             Este comando sirve para verificar el estado de los archivos del proyecto, si fueron modificados, si estan añadidos, o si estan listos para guardar.
-        </p>
+        </p></br></br></br>
+        <h2>git log:</h2>
+        <p class="text">
+            Este comando sirve para ver todo el historial de versiones.
+        </p></br></br></br>
+        <h2>git add:</h2>
+        <p class="text">
+            Este comando sirve para añadir archivos al estado de staging.
+        </p></br></br></br>
+        <h2>git commit -am "Mensaje de indicación del commit":</h2>
+        <p class="text">
+            Este comando sirve para pasar los archivos del estado de staging (Temporal) al repositorio (local), quedan fijados como una versión. En otras palabras, es guardar la versión de los cambios realizados.
+        </p></br></br></br>
         <h2>git pull origin master:</h2>
         <p class="text">
             Mostrará este resultado en consola:</br>
@@ -73,6 +90,30 @@
         <p class="text">
             Este comando permite hacer el merge con el repositorio remoto ya que este hace parte de una historia de archivos distinta a la que se tiene en local. "fatal: refusing to merger histories unrelated"
         </p>
+        <h2>git push origin master:</h2>
+        <p class="text">
+            Este comando sirve para subir los archivos al repositorio remoto.
+        </p></br></br></br>
+        <h2>git checkout + nombre de la rama/de la versión:</h2>
+        <p class="text">
+            Nos cambia el repositorio al de la rama o versión que le indiquemos.
+        </p></br></br></br>
+        <h2>git branch + nombre de la rama:</h2>
+        <p class="text">
+            Este comando crea una rama del repositorio con el nombre que le indiquemos.
+        </p></br></br></br>
+        <h2>git reset HEAD:</h2>
+        <p class="text">
+            Nos ayuda a sacar archivos del estado Staged para devolverlos a su estado anterior. Si los archivos venían de Unstaged, vuelven allí.
+        </p></br></br></br>
+        <h2>git rm --cached:</h2>
+        <p class="text">
+            Mueve los archivos que le indiquemos al estado Untracked.
+        </p></br></br></br>
+        <h2>git rm --force:</h2>
+        <p class="text">
+            Elimina los archivos de Git y del disco duro. Git guarda el registro de la existencia de los archivos, por lo que podremos recuperarlos si es necesario (pero debemos usar comandos más avanzados).
+        </p></br></br></br>
     </div>
     <a class="buttons" href="#inicio">Ir arriba </a>
 </body>

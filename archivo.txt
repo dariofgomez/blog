@@ -1,4 +1,4 @@
-Nuevo Archivo
+Nuevo Archivo, ahora editado desde GitHub: Haz git pull origin master para ver los cambios en local.
 
 Darío Fernando Gómez Báez
 Estudiante Universidad Nacional

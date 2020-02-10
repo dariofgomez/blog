@@ -33,7 +33,7 @@
                     <a class="nav-link" href="github.html" target="_self">GitHub</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="index.html" target="_self">Acerca de</a>
+                    <a class="nav-link" href="android.html" target="_self">Android</a>
                 </li>
             </ul>
         </div>
@@ -71,16 +71,20 @@
         </p></br></br></br>
         <h2>git config —global user.email “sucorreoregistradoenGitHub@correo.com”:</h2>
         <p class="text">
-            Este comando sirve para establecer el email del usuario que está controlando Git. (es absolutamente necesario hacer esto).
+            Este comando sirve para establecer el email del usuario que está controlando Git. (
+                es absolutamente necesario hacer esto).
         </p></br></br></br>
 
         <h2>git status:</h2>
         <p class="text">
-            Este comando sirve para verificar el estado de los archivos del proyecto, si fueron modificados, si estan añadidos, o si estan listos para guardar.
+            Este comando sirve para verificar el estado de los archivos del proyecto, si fueron modificados, 
+            si estan añadidos, o si estan listos para guardar.
         </p></br></br></br>
         <h2>git log:</h2>
         <p class="text">
-            Este comando sirve para ver todo el historial de versiones.
+            Este comando sirve para ver todo el historial de versiones.<br>
+            Usar <strong>git log --all --graph --decorate --oneline</strong>, para ver mejor la historia en la terminal.<br>
+            Se puede abrir una interfaz gráfica donde se observa mejor la historia usando <strong>gitk</strong>
         </p></br></br></br>
         <h2>git add:</h2>
         <p class="text">
@@ -88,11 +92,13 @@
         </p></br></br></br>
         <h2>git commit -am "Mensaje de indicación del commit":</h2>
         <p class="text">
-            Este comando sirve para pasar los archivos del estado de staging (Temporal) al repositorio (local), quedan fijados como una versión. En otras palabras, es guardar la versión de los cambios realizados.
+            Este comando sirve para pasar los archivos del estado de staging (Temporal) al repositorio (local), 
+            quedan fijados como una versión. En otras palabras, es guardar la versión de los cambios realizados.
         </p></br></br></br>
         <h2>git reset HEAD:</h2>
         <p class="text">
-            Nos ayuda a sacar archivos del estado Staged para devolverlos a su estado anterior. Si los archivos venían de Unstaged, vuelven allí.
+            Nos ayuda a sacar archivos del estado Staged para devolverlos a su estado anterior. 
+            Si los archivos venían de Unstaged, vuelven allí.
         </p></br></br></br>
         <h2>git reset --hard:</h2>
         <p class="text">
@@ -109,7 +115,8 @@
         </p></br></br></br>
         <h2>git rm --force:</h2>
         <p class="text">
-            Elimina los archivos de Git y del disco duro. Git guarda el registro de la existencia de los archivos, por lo que podremos recuperarlos si es necesario (pero debemos usar comandos más avanzados).
+            Elimina los archivos de Git y del disco duro. Git guarda el registro de la existencia 
+            de los archivos, por lo que podremos recuperarlos si es necesario (pero debemos usar comandos más avanzados).
         </p></br></br></br>
         <h2>git diff "asqhrjejf" "adbekfjw":</h2>
         <p class="text">
@@ -119,7 +126,45 @@
         <p class="text">
             Muestra los cambios de ese archivo.
         </p></br></br></br>
-
+        <h2>git show-ref --tags:</h2>
+        <p class="text">
+            Muestra los tags y su relación de referencia.
+        </p></br></br></br>
+        <h2>git tag:</h2>
+        <p class="text">
+            Muestra los tags existentes.
+        </p></br></br></br>
+        <h2>git tag -a v0.1 -m "Mensaje del tag //es como el mensaje de un commit" + codigo de referencia de git:</h2>
+        <p class="text">
+            Crea un tag llamado v0.1 en el commit correspondiente al codigo de referencia.
+        </p></br></br></br>
+        <h2>git stash</h2>
+        <p class="text">
+            Guardar cambios en memoria y recuperarlos después, esto permite moverse entre ramas mientras está el stash 
+            en ejecución sin tener que hacer commit. Al guardar los cambios en memoria, regresa a la versión sin cambios.
+            * list: Lista los cambios que están guardados en memoria o en "stash".<br>
+            * pop: devuelve al estado sin stash.<br>
+            * branch +nombre: guarda los cambios en memoria, en una rama (+nombre). Se comitean los cambios en la rama, <br>
+            * drop: se usa cuando se hicieron cambios por error y se vuelve a la versión sin esos errores con stash, la infomación
+            que esta en memoria (stash), se elimina con <strong> git stash drop.</strong>
+        </p></br></br></br>
+        <h2>git stash list:</h2>
+        <p class="text">
+            
+        </p></br></br></br>
+        <h2>git stash pop:</h2>
+        <p class="text">
+            Muestra los cambios de ese archivo.
+        </p></br></br></br>
+        <h2>Amend (remendar):</h2>
+        <p class="text">
+            Enmendar errores. Por ejemplo cambios que faltaron hacer en un commit. Para esto<br>
+            * Se agregan los cambios "git commi add archivo_con_cambios.txt"<br>
+            * O simplemente git add --all, para agregar todos los cambios.<br>
+            * Luego se ejecuta en consola: git commit --ammend<br>
+            * Se confirma el mensaje del commit en vim. Y listo.
+        </p></br></br></br>
+        
         </br></br></br>
         </br></br></br>
         <div id="footer">

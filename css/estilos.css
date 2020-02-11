@@ -13,7 +13,7 @@
 #grad1{
     height: 30px;
     background-color: #EDEDED; /* Se establece un color base en caso de que el navegador que se use no soporte gradientes */
-    background-image: linear-gradient(to bottom right, #c52b26, #44b6b8); /* Sintaxis para establecer backgrounds con gradientes */
+    background-image: linear-gradient(to bottom right, #44b880, #44b6b8); /* Sintaxis para establecer backgrounds con gradientes */
 }
 
 .content{ /*estilo para contenidos*/
